@@ -1,0 +1,18 @@
+   pragma solidity ^0.5.1;
+   contract People{
+    uint256 public peopleCount=0;
+    mapping(uint=>Person) public people;
+
+    struct Person{
+        uint _id;
+        string _firstname;
+        string _lastname;
+    }
+    function addPerson(string memory _firstname, string memory _lastname) public {
+        incrementCount();
+        people[peopleCount]=Person(peopleCount,_firstname,_lastname);
+    }
+    function incrementCount() internal {
+        peopleCount += 1;
+    }
+   }

@@ -1,0 +1,9 @@
+pragma solidity ^0.5.1;
+
+contract addressmapping { 
+mapping(address => uint) public balances;
+  
+ function updateBalance(address account, uint newBalance) public { 
+ balances[account] = newbalance; 
+ }
+}
