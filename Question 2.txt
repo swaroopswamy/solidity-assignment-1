@@ -1,19 +1,17 @@
-   pragma solidity ^0.5.1;
+//0xB0Ccc0bbB9B2EF1347a6F1b5be73aF56f562fcc3
+  
+pragma solidity^0.8.1;
 
-   contract array {
+contract array {
     string value;
 
     constructor() public {
         value= "myValue";
-
     }
-    function get() public view returns(string)
-    {
+    function get() public view returns(string memory){
         return value;
-
     }
-    function set(string _value) public {
+    function set(string memory _value) public {
         value= _value;
-
     }
-   }
+}
