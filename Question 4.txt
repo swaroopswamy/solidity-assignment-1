@@ -1,12 +1,12 @@
    //0x373E380f06128c965E83B089CdA05495Fe43F5C4
    
-   pragma solidity ^0.5.1;
+   pragma solidity^0.8.1;
    contract People{
     uint256 public peopleCount=0;
-    mapping(uint=>Person) public people;
+    mapping(uint256=>Person) public people;
 
     struct Person{
-        uint _id;
+        uint256 _id;
         string _firstname;
         string _lastname;
     }
