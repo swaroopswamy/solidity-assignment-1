@@ -1,11 +1,11 @@
 //0xFfdb2f1027b26C9F19e5c8667B663FBA3Db68B17
 
-pragma solidity ^0.5.1;
+pragma solidity ^0.8.1;
 
 contract addressmapping { 
-mapping(address => uint) public balances;
+mapping(address => uint256) public balances;
   
- function updateBalance(address account, uint newBalance) public { 
+ function updateBalance(address account, uint256 newbalance) public { 
  balances[account] = newbalance; 
  }
 }
