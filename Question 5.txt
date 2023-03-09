@@ -1,4 +1,6 @@
-   pragma solidity ^0.5.1;
+   //0xb90e3971141B29FC827D161bA7B7fe74ff958dF4
+   
+   pragma solidity^0.8.1;
    contract machinechange{
     enum State {Ready,Waiting,Active}
     State public state;
