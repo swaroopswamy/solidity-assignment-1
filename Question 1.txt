@@ -1,13 +1,13 @@
 //0x53de2b6369D343BC06f3D781B0AF5dE0F8cC761a
 
-pragma solidity 0.5.1;
+pragma solidity^0.8.1;
 
 contract integer {
-uint public Count=0;
-event Increment(uint value);
-event Decrement(uint value);
+uint256 public Count=0;
+event Increment(uint256 value);
+event Decrement(uint256 value);
 
-function getCount() view public returns(uint){
+function getCount() view public returns(uint256){
 return Count;
 }
 function increment() public{
